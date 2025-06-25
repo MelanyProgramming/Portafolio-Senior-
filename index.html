@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Melany Araúz</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow">
+    <div class="container">
+      <a class="navbar-brand fs-3 fw-bold" href="#">Melany Araúz</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portafolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sobre mí -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5 text-center mb-4 mb-md-0">
+          <img src="profile.jpg" alt="Foto de Melany Araúz" class="rounded-circle shadow-lg img-fluid" style="max-width: 250px;">
+        </div>
+        <div class="col-md-7">
+          <h2 class="fw-bold mb-3">Sobre mí</h2>
+          <p class="lead">Soy Melany Araúz, una desarrolladora apasionada por crear experiencias digitales elegantes, funcionales e interactivas. Me especializo en desarrollo web moderno, diseño UI/UX y soluciones creativas para proyectos innovadores.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiencia -->
+  <section id="experience" class="py-5">
+    <div class="container">
+      <h2 class="fw-bold mb-4 text-center">Experiencia</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Desarrolladora Frontend</h5>
+              <p class="card-text">Empresa XYZ<br><small class="text-muted">2022 - Presente</small></p>
+              <ul>
+                <li>Desarrollo de interfaces responsivas y atractivas.</li>
+                <li>Implementación de animaciones y efectos interactivos.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Diseñadora UI/UX</h5>
+              <p class="card-text">Freelance<br><small class="text-muted">2020 - 2022</small></p>
+              <ul>
+                <li>Diseño de experiencias de usuario intuitivas.</li>
+                <li>Colaboración con equipos multidisciplinarios.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Desarrolladora Web Junior</h5>
+              <p class="card-text">Startup ABC<br><small class="text-muted">2018 - 2020</small></p>
+              <ul>
+                <li>Creación de sitios web modernos y funcionales.</li>
+                <li>Optimización de rendimiento y accesibilidad.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portafolio -->
+  <section id="portfolio" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="fw-bold mb-4 text-center">Mi Galería</h2>
+      <div class="row g-4" id="portfolio-gallery">
+        <!-- Proyectos de portafolio se insertarán aquí con JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="fw-bold mb-4 text-center">Contacto</h2>
+      <form id="contactForm" class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark w-100">Enviar mensaje</button>
+      </form>
+      <div id="formAlert" class="alert mt-3 d-none" role="alert"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 mt-5 shadow-lg position-relative">
+    <div class="container text-center">
+      <div class="mb-2">
+        <a href="#" class="text-white me-3"><i class="bi bi-github"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-envelope"></i></a>
+      </div>
+      <p class="mb-0">&copy; 2024 Melany Araúz. Todos los derechos reservados.</p>
+    </div>
+    <div class="footer-curve position-absolute bottom-0 start-0 w-100" style="height: 30px; overflow: hidden;">
+      <svg viewBox="0 0 120 28" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0,0 C30,28 90,0 120,28 L120,30 L0,30 Z" fill="#fff"/></svg>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> 
