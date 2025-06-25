@@ -1,0 +1,81 @@
+body {
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: #f8f9fa;
+  color: #222;
+}
+
+header.navbar {
+  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.navbar-brand {
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+
+.nav-link {
+  transition: color 0.2s;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #ffc107 !important;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+#about img {
+  border: 6px solid #fff;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  transition: transform 0.3s;
+}
+#about img:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+.card {
+  border: none;
+  border-radius: 1rem;
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+
+#portfolio-gallery .card {
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+#portfolio-gallery .card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+}
+
+footer {
+  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  position: relative;
+}
+.footer-curve svg {
+  display: block;
+}
+
+footer a {
+  font-size: 1.5rem;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+footer a:hover {
+  opacity: 1;
+  color: #ffc107 !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #e9ecef;
+}
+::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
+  border-radius: 4px;
+} 
