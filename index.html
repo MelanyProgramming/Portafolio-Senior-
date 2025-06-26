@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio de Melany Araúz</title>
+  <title>Portafolio Creativo de Melany Araúz</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Gladiola:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Header -->
-  <header class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow">
+  <header class="navbar navbar-expand-lg navbar-dark py-3 shadow">
     <div class="container">
-      <a class="navbar-brand fs-3 fw-bold" href="#">Melany Araúz</a>
+      <a class="navbar-brand fs-3 fw-bold" href="#">🐱 Melany Araúz 🧶</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -20,6 +21,7 @@
           <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
           <li class="nav-item"><a class="nav-link" href="#experience">Experiencia</a></li>
           <li class="nav-item"><a class="nav-link" href="#portfolio">Portafolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#drawing">Dibujar</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
         </ul>
       </div>
@@ -27,15 +29,17 @@
   </header>
 
   <!-- Sobre mí -->
-  <section id="about" class="py-5 bg-light">
+  <section id="about" class="py-5">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-5 text-center mb-4 mb-md-0">
-          <img src="profile.jpg" alt="Foto de Melany Araúz" class="rounded-circle shadow-lg img-fluid" style="max-width: 250px;">
+          <div class="profile-container">
+            <img src="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.png" alt="Foto de Melany Araúz" class="profile-image">
+          </div>
         </div>
         <div class="col-md-7">
-          <h2 class="fw-bold mb-3">Sobre mí</h2>
-          <p class="lead">Soy Melany Araúz, una desarrolladora apasionada por crear experiencias digitales elegantes, funcionales e interactivas. Me especializo en desarrollo web moderno, diseño UI/UX y soluciones creativas para proyectos innovadores.</p>
+          <h2 class="fw-bold mb-3">🐾 Sobre mí</h2>
+          <p class="lead">¡Hola! Soy Melany Araúz, una desarrolladora creativa que ama los animales y el crochet. Cuando no estoy tejiendo códigos, me encuentras creando amigurumis o jugando con mis mascotas. Mi pasión por crear se refleja tanto en mis proyectos digitales como en mis manualidades.</p>
         </div>
       </div>
     </div>
@@ -44,54 +48,145 @@
   <!-- Experiencia -->
   <section id="experience" class="py-5">
     <div class="container">
-      <h2 class="fw-bold mb-4 text-center">Experiencia</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Desarrolladora Frontend</h5>
-              <p class="card-text">Empresa XYZ<br><small class="text-muted">2022 - Presente</small></p>
-              <ul>
-                <li>Desarrollo de interfaces responsivas y atractivas.</li>
-                <li>Implementación de animaciones y efectos interactivos.</li>
-              </ul>
+      <h2 class="fw-bold mb-4 text-center">🌟 Experiencia</h2>
+      <div id="experienceCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#experienceCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#experienceCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#experienceCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <img src="https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_1280.jpg" class="d-block w-100 rounded" alt="Desarrolladora Frontend">
+              </div>
+              <div class="col-md-6">
+                <h3>Desarrolladora Frontend Senior</h3>
+                <p class="text-muted">TechCorp • 2022 - Presente</p>
+                <p>Lideré el desarrollo de interfaces responsivas para aplicaciones web de alto tráfico. Implementé animaciones fluidas y optimicé el rendimiento, mejorando la experiencia del usuario en un 40%.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" class="d-block w-100 rounded" alt="Diseñadora UI/UX">
+              </div>
+              <div class="col-md-6">
+                <h3>Diseñadora UI/UX</h3>
+                <p class="text-muted">CreativeStudio • 2020 - 2022</p>
+                <p>Diseñé experiencias de usuario intuitivas para más de 15 proyectos. Colaboré con equipos multidisciplinarios para crear interfaces que combinaran estética y funcionalidad.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <img src="https://cdn.pixabay.com/photo/2017/08/10/03/47/ecommerce-2619823_1280.jpg" class="d-block w-100 rounded" alt="Desarrolladora Web">
+              </div>
+              <div class="col-md-6">
+                <h3>Desarrolladora Web Full Stack</h3>
+                <p class="text-muted">StartupHub • 2018 - 2020</p>
+                <p>Desarrollé sitios web completos desde cero, implementando funcionalidades de e-commerce y sistemas de gestión de contenido. Optimicé el rendimiento y la accesibilidad.</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Diseñadora UI/UX</h5>
-              <p class="card-text">Freelance<br><small class="text-muted">2020 - 2022</small></p>
-              <ul>
-                <li>Diseño de experiencias de usuario intuitivas.</li>
-                <li>Colaboración con equipos multidisciplinarios.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Desarrolladora Web Junior</h5>
-              <p class="card-text">Startup ABC<br><small class="text-muted">2018 - 2020</small></p>
-              <ul>
-                <li>Creación de sitios web modernos y funcionales.</li>
-                <li>Optimización de rendimiento y accesibilidad.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#experienceCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#experienceCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
   </section>
 
   <!-- Portafolio -->
-  <section id="portfolio" class="py-5 bg-light">
+  <section id="portfolio" class="py-5">
     <div class="container">
-      <h2 class="fw-bold mb-4 text-center">Mi Galería</h2>
-      <div class="row g-4" id="portfolio-gallery">
-        <!-- Proyectos de portafolio se insertarán aquí con JS -->
+      <h2 class="fw-bold mb-4 text-center">🎨 Mi Galería</h2>
+      <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <img src="https://cdn.pixabay.com/photo/2017/01/20/00/30/ux-1992443_1280.jpg" class="d-block w-100 rounded" alt="Landing Page Creativa">
+              </div>
+              <div class="col-md-6">
+                <h3>Landing Page Creativa</h3>
+                <p class="text-muted">Proyecto Personal</p>
+                <p>Landing page moderna y responsiva para una startup de tecnología. Incluye animaciones fluidas, formularios interactivos y optimización SEO.</p>
+                <a href="#" class="btn btn-outline-primary">Ver proyecto</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" class="d-block w-100 rounded" alt="Dashboard Interactivo">
+              </div>
+              <div class="col-md-6">
+                <h3>Dashboard Interactivo</h3>
+                <p class="text-muted">Proyecto Empresarial</p>
+                <p>Dashboard con visualizaciones de datos en tiempo real, gráficos interactivos y panel de administración completo para gestión empresarial.</p>
+                <a href="#" class="btn btn-outline-primary">Ver proyecto</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <img src="https://cdn.pixabay.com/photo/2017/08/10/03/47/ecommerce-2619823_1280.jpg" class="d-block w-100 rounded" alt="E-commerce Elegante">
+              </div>
+              <div class="col-md-6">
+                <h3>E-commerce Elegante</h3>
+                <p class="text-muted">Proyecto Comercial</p>
+                <p>Tienda online completa con carrito de compras, sistema de pagos integrado, gestión de inventario y panel de administración.</p>
+                <a href="#" class="btn btn-outline-primary">Ver proyecto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tablero de Dibujo -->
+  <section id="drawing" class="py-5">
+    <div class="container">
+      <h2 class="fw-bold mb-4 text-center">🎨 Tablero de Dibujo</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="text-center mb-3">
+            <button id="showDrawingBoard" class="btn btn-primary">Dibujar</button>
+          </div>
+          <div class="drawing-board-container d-none" id="drawingBoardContainer">
+            <canvas id="drawingCanvas" width="800" height="400"></canvas>
+            <div class="drawing-controls mt-3">
+              <button id="clearCanvas" class="btn btn-outline-secondary me-2">Limpiar</button>
+              <input type="color" id="colorPicker" class="form-control form-control-color d-inline-block me-2" value="#000000" style="width: 50px;">
+              <input type="range" id="brushSize" class="form-range d-inline-block" min="1" max="20" value="5" style="width: 150px;">
+              <span id="brushSizeValue" class="ms-2">5px</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -99,7 +194,7 @@
   <!-- Contacto -->
   <section id="contact" class="py-5">
     <div class="container">
-      <h2 class="fw-bold mb-4 text-center">Contacto</h2>
+      <h2 class="fw-bold mb-4 text-center">💌 Contacto</h2>
       <form id="contactForm" class="mx-auto" style="max-width: 600px;">
         <div class="mb-3">
           <label for="name" class="form-label">Nombre</label>
@@ -113,24 +208,21 @@
           <label for="message" class="form-label">Mensaje</label>
           <textarea class="form-control" id="message" rows="4" required></textarea>
         </div>
-        <button type="submit" class="btn btn-dark w-100">Enviar mensaje</button>
+        <button type="submit" class="btn w-100">Enviar mensaje</button>
       </form>
       <div id="formAlert" class="alert mt-3 d-none" role="alert"></div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white py-4 mt-5 shadow-lg position-relative">
+  <footer class="py-4 mt-5 shadow-lg position-relative">
     <div class="container text-center">
       <div class="mb-2">
-        <a href="#" class="text-white me-3"><i class="bi bi-github"></i></a>
-        <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
-        <a href="#" class="text-white"><i class="bi bi-envelope"></i></a>
+        <a href="#" class="me-3">🐱</a>
+        <a href="#" class="me-3">🧶</a>
+        <a href="#" class="me-3">💻</a>
       </div>
       <p class="mb-0">&copy; 2024 Melany Araúz. Todos los derechos reservados.</p>
-    </div>
-    <div class="footer-curve position-absolute bottom-0 start-0 w-100" style="height: 30px; overflow: hidden;">
-      <svg viewBox="0 0 120 28" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0,0 C30,28 90,0 120,28 L120,30 L0,30 Z" fill="#fff"/></svg>
     </div>
   </footer>
 
